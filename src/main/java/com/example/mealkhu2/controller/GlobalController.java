@@ -14,7 +14,7 @@ public class GlobalController {
     @Autowired
     private MongoDbRepositoryGlobal mongorepo;
 
-    @GetMapping("/global")
+    @GetMapping("/api/global")
     public Object getGlobal(){
         List<GlobalRest> result = mongorepo.findAll();
         return result;

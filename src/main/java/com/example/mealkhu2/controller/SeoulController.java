@@ -17,7 +17,7 @@ public class SeoulController {
     @Autowired
     private MongoDbRepository mongorepo;
 
-    @GetMapping("/seoul")
+    @GetMapping("/api/seoul")
     public Object getSeoul(Model model){
 //        System.out.println(mongorepo.findAllBy("파파이스경희의료원점")
         List<SeoulRest> result = mongorepo.findAll();
