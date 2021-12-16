@@ -19,13 +19,7 @@ public class SeoulController {
 
     @GetMapping("/api/seoul")
     public Object getSeoul(Model model){
-//        System.out.println(mongorepo.findAllBy("파파이스경희의료원점")
         List<SeoulRest> result = mongorepo.findAll();
-
-//        model.addAttribute("list", result);
-//        System.out.println(result);
-//        System.out.println(result.size());
-//        return "seoul";
         return result;
     }
 }
