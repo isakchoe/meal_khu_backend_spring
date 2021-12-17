@@ -32,7 +32,7 @@ test {
 	useJUnitPlatform()
 }
 
-
+// 헤로쿠 배포를 위한 것
 jar {
 	enabled=false
 	manifest{
